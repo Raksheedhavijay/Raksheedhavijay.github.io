@@ -1,234 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raksheedha V K | Portfolio</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f0f0f;
-            color: #fff;
-        }
-
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(135deg, #8500ff, #5200ff);
-        }
-
-        header h1 {
-            font-size: 40px;
-        }
-
-        section {
-            padding: 50px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #b273ff;
-            border-left: 5px solid #b273ff;
-            padding-left: 10px;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #1a1a1a;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #333;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #b273ff;
-        }
-
-        a {
-            color: #b273ff;
-            text-decoration: none;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background: #111;
-            margin-top: 40px;
-        }
-
-        .skills span {
-            background: #2b2b2b;
-            padding: 8px 12px;
-            margin: 5px;
-            display: inline-block;
-            border-radius: 5px;
-            border: 1px solid #444;
-        }
-
-        .contact-links a {
-            margin: 10px;
-            display: inline-block;
-            background: #b273ff;
-            color: #000;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        .contact-links a:hover {
-            background: #d7b2ff;
-        }
-
-        .edu-card {
-            background: #1a1a1a;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 5px solid #b273ff;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Professional cybersecurity portfolio of Raksheedha V K, a cybersecurity undergraduate." />
+  <title>Raksheedha V K • Cybersecurity Portfolio</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo"><strong>Raksheedha V K</strong></div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#profiles">Coding Profiles</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-<header>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <canvas id="heroCanvas"></canvas>
     <h1>Raksheedha V K</h1>
-    <p>B.E CSE (Cyber Security) | Member @ WiCyS-SECE Chapter | Cybersecurity Enthusiastist | Learning C & Python</p>
-
-    <div class="contact-links">
-        <a href="mailto:raksheedhavk@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/raksheedha-vk-696792333/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Raksheedhavijay" target="_blank">GitHub</a>
+    <h2 class="typing"></h2>
+    <div class="buttons">
+      <a href="#" class="button" id="downloadResume" title="Resume not available yet">Download Resume</a>
+      <a href="#" class="button" id="githubLink"><i class="fab fa-github"></i> GitHub</a>
+      <a href="#" class="button" id="linkedinLink"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:#" class="button" id="emailLink"><i class="fas fa-envelope"></i> Email</a>
     </div>
-</header>
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a passionate Cybersecurity currently pursuing B.E CSE (Cyber Security). 
-        I specialize in threat detection, secure systems, and real-time monitoring solutions. 
-        Skilled in Python, C, C++, Java, Django, MongoDB, and SQL with strong problem-solving abilities.
-    </p>
-</section>
-<section>
-    <h2>Education</h2>
+  </section>
 
-    <div class="edu-card">
-        <h3>B.E Computer Science & Engineering (Cyber Security)</h3>
-        <p>Sri Eshwar College of Engineering</p>
-        <p><b>CGPA:</b> 7.86</p>
-        <p><b>Year:</b> 2024–2028</p>
+  <!-- About -->
+  <section id="about">
+    <h3 class="section-title">About Me</h3>
+    <div class="card">
+      <p>I am a dedicated cybersecurity undergraduate at Sri Eshwar College of Engineering, specializing in digital
+        forensics, SOC operations, and threat detection. My experience spans developing malware analysis tools, forensic
+        recovery utilities, and machine‑learning models for attack prediction. I thrive on solving complex security
+        challenges, contributing to research, and continuously expanding my skill set.</p>
     </div>
+  </section>
 
-    <div class="edu-card">
-        <h3>Intermediate (BIEAP)</h3>
-        <p>Sri Sai Aditya Junior College</p>
-        <p><b>Percentage:</b> 90.5%</p>
-        <p><b>Year:</b> 2023–2024</p>
+  <!-- Education Timeline -->
+  <section id="education">
+    <h3 class="section-title">Education</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>B.E. Computer Science &amp; Engineering (Cybersecurity)</h4>
+        <p>Sri Eshwar College of Engineering (2024‑2028)</p>
+        <p>CGPA: 7.665 – Coursework: Network Security, Digital Forensics, Secure Software Development.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>BIEAP – Sri Sai Aditya Junior College</h4>
+        <p>Score: 90.5% – Focus on Mathematics and Physics.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>SSLC – Sri Vijay Vidyalaya Matriculation Hr. Sec. School</h4>
+        <p>Score: 89.6% – Foundation in Science and Computer Basics.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="edu-card">
-        <h3>SSLC</h3>
-        <p>Sri Vijay Vidyalaya</p>
-        <p><b>Percentage:</b> 89.6%</p>
-        <p><b>Year:</b> 2021–2022</p>
+  <!-- Skills -->
+  <section id="skills">
+    <h3 class="section-title">Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fas fa-code"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-code"></i>
+        <p>Java</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-code"></i>
+        <p>C++</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-terminal"></i>
+        <p>Bash</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-database"></i>
+        <p>SQL</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-database"></i>
+        <p>MongoDB</p>
+      </div>
+      <div class="skill-card"><i class="fab fa-aws"></i>
+        <p>AWS</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-laptop"></i>
+        <p>Linux</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-windows"></i>
+        <p>Windows</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-search"></i>
+        <p>Wireshark</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-bug"></i>
+        <p>Burp Suite</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-network-wired"></i>
+        <p>Nmap</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-cloud"></i>
+        <p>Splunk</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-shield-alt"></i>
+        <p>Microsoft Sentinel</p>
+      </div>
+      <div class="skill-card"><i class="fab fa-git-alt"></i>
+        <p>Git</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-code"></i>
+        <p>VS Code</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-microscope"></i>
+        <p>Digital Forensics</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-project-diagram"></i>
+        <p>Network Security</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-globe"></i>
+        <p>Web Security</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-shield-virus"></i>
+        <p>SOC Operations</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-bullseye"></i>
+        <p>Threat Detection</p>
+      </div>
     </div>
+  </section>
 
-</section>
-<section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>C</span><span>C++</span><span>Python</span><span>Java</span>
-        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        <span>SQL</span><span>MongoDB</span>
-        <span>BurpSuite</span><span>GitHub</span><span>VS Code</span>
-    </div>
-</section>
-<section>
-    <h2>Projects</h2>
-    <div class="container">
-
-        <div class="card">
-            <h3>Real-Time Network Traffic Analyzer</h3>
-            <p>
-Developed a Python-based network packet sniffer using Scapy to capture and analyze live TCP/UDP traffic in real
-time and provide detailed logging of source/destination IPs, ports, protocols, and payload snippets for network
-monitoring and analysis and understanding of network protocols, packet structures, and traffic inspection with
-persistent logging and console output.
-            </p>
+  <!-- Projects -->
+  <section id="projects">
+    <h3 class="section-title">Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card card">
+        <div class="overlay">
+          <h4>Real‑Time Network Traffic Analyzer</h4>
+          <p>Developed a Java‑based tool using MySQL and JDBC to capture, filter, and visualize live network packets,
+            enabling proactive threat detection.</p>
+          <a href="https://github.com/raksheedha/network-analyzer" target="_blank">GitHub</a>
         </div>
-
-        <div class="card">
-            <h3>Hotel Management System (C, SQL)</h3>
-            <p>
-                Developed room booking, check-in/out, billing, and record 
-                maintenance using C with SQL & file handling. Modular and efficient CLI-based design.
-            </p>
+      </div>
+      <div class="project-card card">
+        <div class="overlay">
+          <h4>Log Analyzer &amp; Threat Detector</h4>
+          <p>Built a Python script that parses system logs, applies entropy analysis and pattern matching to flag
+            suspicious activities.</p>
+          <a href="https://github.com/raksheedha/log-analyzer" target="_blank">GitHub</a>
         </div>
-
-        <div class="card">
-            <h3>Log Analyzer & Threat Detector (Java + MySQL)</h3>
-            <p>
-                Developed a Java-based Log Analyzer and Threat Detection System integrated with MySQL using JDBC to
-automatically scan and analyze system logs for suspicious activities. Implemented modules for anomaly detection,
-entropy analysis, and threat pattern recognition, enabling proactive identification of potential cyber threats.
-            </p>
+      </div>
+      <div class="project-card card">
+        <div class="overlay">
+          <h4>Predicting Future Cyber Attacks</h4>
+          <p>Implemented a scikit‑learn pipeline that trains on network traffic features to predict upcoming attack
+            types.</p>
+          <a href="https://github.com/raksheedha/cyber-predictor" target="_blank">GitHub</a>
         </div>
-
+      </div>
+      <div class="project-card card">
+        <div class="overlay">
+          <h4>Hotel Management System</h4>
+          <p>Created a Java Spring Boot + React app for hotel bookings, integrating Stripe for payments.</p>
+          <a href="https://github.com/raksheedha/hotel-management" target="_blank">GitHub</a>
+        </div>
+      </div>
     </div>
-</section>
-<section>
-    <h2>Coding Profiles</h2>
-    <ul>
-        <li><a href="https://leetcode.com/u/Raksheedha/">LeetCode – 170+ problems solved</a></li>
-        <li><a href="https://account.hackthebox.com/dashboard">HackTheBox – 7.56% and Hands-on labs</a></li>
-        <li><a href="https://www.skillrack.com/faces/resume.xhtml?id=515167">Skillrack – 1040+ problems</a></li>
-        <li><a href="https://tryhackme.com/p/Raksheedhavijay">TryHackMe – 40+ rooms and Hands-on training</a></li>
-    </ul>
-</section>
-<section>
-    <h2>Certifications</h2>
-    <ul>
-        <li>Cyber Forensics & Incident Response – KCFS</li>
-        <li>Introduction to Cybersecurity - Cisco</li>
-        <li>Ethical Hacking (Basics – Kali) – Udemy</li>
-        <li>Mastering DSA in C/C++ - Udemy</li>
-        <li>CompTIA Security+ SY0-701 – Udemy</li>
-        <li>Introduction to Cybersecurity – Cisco</li>
-        <li>Python Essentials - Cisco</li>
-    </ul>
-</section>
-<section>
-    <h2>Achievements</h2>
-    <ul>
-        <li>Third place – Leetcode Contest at Sri Eshwar college of Engineering</li>
-        <li>Finalist – DBMS Coding Contest</li>
-        <li>Active Member – WiCyS (Women in Cyber Security) Club</li>
-        <li>Finalists in – Lakshaya CTF</li>
-    </ul>
-</section>
-<section>
-    <h2>Internship</h2>
-    <p>
-        <b>Cyber Security Intern – CyberFort Tech (2025)</b><br>
-        Worked on malware analysis, threat detection, secure coding, and incident response. 
-        Gained hands-on experience with live security tools and real-world cyber-attack analysis.
-    </p>
-    <p>
-        <b>Cybersecurity – CodeAlpha</b><br>
-        Completed a Cyber Security Virtual Internship at CodeAlpha, gaining practical exposure to industry-relevant security concepts.
-Developed foundational knowledge in cyber threat identification, security best practices, and risk mitigation techniques.Demonstrated
-strong analytical skills, professionalism, and commitment to continuous learning throughout the internship.
-    </p>
-</section>
-</section>
+  </section>
+
+  <!-- Experience (Internships) -->
+  <section id="experience">
+    <h3 class="section-title">Internships</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Summer Research Intern – NIT Calicut</h4>
+        <p>Developed forensic disk analysis tools, performed protocol security assessments, and contributed to academic
+          publications.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Cybersecurity Intern – CyberFort Tech</h4>
+        <p>Built CLI‑based malware analysis utilities, conducted static and dynamic analysis, and supported SOC threat
+          hunting.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Cybersecurity Intern – CodeAlpha</h4>
+        <p>Performed vulnerability scanning, pen‑testing of web applications, and authored remediation reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coding Profiles -->
+  <section id="profiles">
+    <h3 class="section-title">Coding Profiles</h3>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fab fa-leetcode"></i>
+        <p><a href="https://leetcode.com/raksheedha" target="_blank">LeetCode</a><br>230+ Problems<br>Rating 1472</p>
+      </div>
+      <div class="skill-card"><i class="fab fa-thinkful"></i>
+        <p><a href="https://tryhackme.com/p/raksheedha" target="_blank">TryHackMe</a><br>102+ Rooms<br>15+ Badges</p>
+      </div>
+      <div class="skill-card"><i class="fab fa-hack-the-box"></i>
+        <p><a href="https://app.hackthebox.com/profile/raksheedha" target="_blank">Hack The Box</a><br>Active Learner
+        </p>
+      </div>
+      <div class="skill-card"><i class="fas fa-graduation-cap"></i>
+        <p><a href="https://skillrack.com/profile/raksheedha" target="_blank">Skillrack</a><br>1040+ Problems</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h3 class="section-title">Certifications</h3>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fas fa-certificate"></i>
+        <p>Blue Team Junior Analyst</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-certificate"></i>
+        <p>SOC Analyst</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-certificate"></i>
+        <p>Linux100 Fundamentals</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-certificate"></i>
+        <p>AWS Academy Cloud Foundation</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-certificate"></i>
+        <p>CompTIA Security+</p>
+      </div>
+      <div class="skill-card"><i class="fas fa-certificate"></i>
+        <p>Introduction to Cybersecurity</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h3 class="section-title">Achievements</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Third Place – LeetCode Contest</h4>
+      </div>
+      <div class="timeline-item">
+        <h4>Finalist – Lakshaya CTF</h4>
+      </div>
+      <div class="timeline-item">
+        <h4>Finalist – DBMS Coding Contest</h4>
+      </div>
+      <div class="timeline-item">
+        <h4>Active Member – WiCyS</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h3 class="section-title">Contact</h3>
+    <div class="card" style="max-width:600px;margin:auto;">
+      <form id="contactForm">
+        <div style="margin-bottom:1rem;">
+          <input type="text" placeholder="Name" required
+            style="width:100%;padding:0.5rem;border:none;border-radius:4px;" />
+        </div>
+        <div style="margin-bottom:1rem;">
+          <input type="email" placeholder="Email" required
+            style="width:100%;padding:0.5rem;border:none;border-radius:4px;" />
+        </div>
+        <div style="margin-bottom:1rem;">
+          <textarea placeholder="Message" required
+            style="width:100%;padding:0.5rem;border:none;border-radius:4px;height:120px;"></textarea>
+        </div>
+        <button type="submit"
+          style="background:var(--accent);color:var(--bg-primary);border:none;padding:0.75rem 1.5rem;border-radius:30px;cursor:pointer;">Send</button>
+      </form>
+    </div>
+    <div style="margin-top:2rem;text-align:center;">
+      <a href="mailto:#" style="margin:0 0.5rem;color:var(--accent);"><i class="fas fa-envelope fa-2x"></i></a>
+      <a href="#" style="margin:0 0.5rem;color:var(--accent);"><i class="fas fa-phone fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/raksheedha" style="margin:0 0.5rem;color:var(--accent);"><i
+          class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/raksheedha" style="margin:0 0.5rem;color:var(--accent);"><i
+          class="fab fa-github fa-2x"></i></a>
+    </div>
+  </section>
+
+  <!-- Back to Top -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <footer>
+    <p>© 2026 Raksheedha V K. Designed with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
